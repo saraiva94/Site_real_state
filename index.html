@@ -4,45 +4,56 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="timezone" content="Europe/Dublin">
         <title>Housework</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" async defer></script>
-        <script src="/jquery-3.6.1.min.js"></script>
+        <script src="jquery-3.6.1.min.js" defer></script>
         <script src="script.js" defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjPN1FvN1wmuS96fRbsOrZUw11qoW4lvY&callback=initMap" async defer></script>
+
     </head>
-    <body>
-    <header>
-        <h1>Title Example</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Rental Catalog</a>
-        <a href="#">Contact us</a>
-    </nav>
-    <main>
-        <article>
-    <h1>Title Example</h1>
+    <body onload="initMap()">
+        <header>
+            <h1>Title Example</h1>
+        </header>
+        <nav>
+            <button id="dark-mode-toggle">&#9728;</button>
+            <a href="#">Home</a>
+            <a href="#">Rental Catalog</a>
+            <a href="Status/Conclusao.html">Contact us</a>
+        </nav>
+        <main>
+            <article>
+            <h1>Title Example</h1>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ipsam perferendis minus! Alias accusamus vitae quia dolores qui, optio excepturi quas veritatis, dicta exercitationem saepe ea magnam quibusdam et nemo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ipsam perferendis minus! Alias accusamus vitae quia dolores qui, optio excepturi quas veritatis, dicta 
+                exercitationem saepe ea magnam quibusdam et nemo.</p>
 
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ksZKLqQf4sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay></iframe>
-    </div>
-    
-    
-    <aside>
-        <h3>City map</h3>
-        <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621&zoom=15" frameborder="0" allowfullscreen></iframe>
-    </aside>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ksZKLqQf4sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay></iframe>
+            </div>
+            
+            <aside>
+                <h3>City map</h3>
+                <iframe width="100%" height="500"  style="border:0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11943.99794787691!2d-6.2674936!3d53.34410399999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zRG9taW5pYSwgSWxyYW5kLCBJcmxhbmQ!5e0!3m2!1sen!2sus!4v1614727321848!5m2!1sen!2sus"
+ allowfullscreen>
+                    <div id="map" style="border:0; width: 100% ; height: 400px;" ></div>
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Digite o local...">
+                        <button type="submit" id="search-button">Pesquisar</button>
+                      </form>
+                      
+                </iframe>
+            </aside>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi molestiae sunt animi a et voluptates delectus repellendus, est, dicta fugiat tempora odio vero! Maxime, neque facilis! Dicta culpa distinctio ut.</p>
-    
-</article>
-</main>
-<footer>   
-    <p>Website created by <a href=""">Anna Gabriela</a> para o <a href="">Teacher Name / Subject </a>.</p>
-</footer>
-</body>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur minus sequi autem, pariatur incidunt excepturi id aspernatur aut ex illo, sint delectus accusantium iure, necessitatibus amet cum quod voluptate ea.</p>
+        
+            </article>
+        </main>
+
+        <footer>   
+            <p>Website created by <a href="#">Anna Gabriela</a> para o <a href="#">Teacher Name / Subject </a>.</p>
+        </footer>
+    </body>
 </html>

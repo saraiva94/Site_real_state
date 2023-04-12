@@ -26,7 +26,12 @@
     padding: 0px;
 }
 
+
 body{
+    background-image: url(../117459.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
     background-color:var(--cor0);
     font-family: var(--fonte-padrao);
 }
@@ -67,7 +72,8 @@ nav {
 }
 
 nav > a {
-    padding: 30px;;
+    font-size: 1.7em;
+    padding: 30px;
     color: var(--cor2);
     font-weight: bolder;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
@@ -100,7 +106,6 @@ div.video > iframe {
     border-radius: 3px;
 }
 
-
 main {
     background-color: white;
     min-width: 300px ;
@@ -108,14 +113,15 @@ main {
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(209, 61, 61, 0.459);
+    box-shadow: 0px 0px 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    text-align: center;
 }
 
 
 main h1 {
-    color: var(--cor5);
+    color: var(--cor);
     font-family: var(--fonte-android);
     background-image: linear-gradient(to right, var(--cor2), transparent);
     font-weight: bolder;
@@ -129,15 +135,6 @@ main p {
     text-indent: 30px;
     font-size: 1.2em;
     line-height: 1.7em;
-}
-
-
-main a {
-    padding: 15px;
-    color: var(--cor4);
-    font-weight: bolder;
-    text-shadow: 1.3px 1.3px 0px rgba(0, 0, 0, 0.473);
-    text-decoration: underline;
 }
 
 aside {
@@ -155,13 +152,9 @@ aside h3 {
     border-radius: 10px 10px 0px 0px;
 }
 
-aside iframe {
-    border-radius: 10px;
-}
-
 
 footer {
-    background-color: var(--cor3);
+
     color: white;
     text-align: center;
     font-weight: bold;
@@ -182,4 +175,105 @@ footer a:hover {
         padding:5px 10px;
         border-radius: 3px;
         transition-duration: 0.5s;
+}
+
+/* Estilos para o botão de alternância */
+#dark-mode-toggle {
+    font-weight: bolder;
+    background-color: transparent;
+    color: #000000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 40px;
+  }
+  
+
+/* Estilo para o modo escuro */
+.dark-mode {
+    --cor6:#111;
+    --cor7:#222;
+    --cor8:#333;
+    --cor9:#444;
+    --cor10:#555;
+    --cor11:#666;
+    --cor12:#e4f0e1;
+    --cor13:#c4d8b6;
+    --cor14:#a0be8a;
+    --cor15:#7da162;
+    --cor16:#5c8740;
+    --cor17:#407029;
+    --cor18: #243f18;
+
+    --fonte-padrao: Arial, Verdana, Helvetica ,sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android:'Android', cursive;
+
+    /* Alterando a cor de fundo do body para preto */
+    background-color: var(--cor6);
+}
+
+/* Alterando as cores do header para preto e substituindo o gradiente */
+.dark-mode header {
+    background-image: linear-gradient(to bottom, var(--cor18), var(--cor17) );
+}
+
+/* Alterando a cor do texto do header para branco */
+.dark-mode header > h1,
+.dark-mode header > p {
+    color: white;
+}
+
+/* Alterando a cor de fundo do nav para preto e a cor dos links para branco */
+.dark-mode nav {
+    background-color: var(--cor17);
+}
+
+.dark-mode nav > a {
+    color: var(--cor14);
+}
+
+.dark-mode nav > a:hover {
+    background-color: var(--cor14);
+    color: var(--cor17);
+}
+/* Alterando a cor de fundo da div.video para preto */
+.dark-mode div.video {
+    background-color: var(--cor17);
+}
+
+/* Alterando a cor de fundo do main para preto e a cor do texto para branco */
+.dark-mode main {
+    background-color: var(--cor7);
+}
+
+.dark-mode main h1 {
+    background-image: linear-gradient(to right, var(--cor17), var(--cor7) );
+    color: var(--cor13);
+}
+
+.dark-mode main p {
+    color: white;
+}
+
+/* Alterando a cor de fundo do aside para preto e a cor do texto para branco */
+.dark-mode aside {
+    background-color: var(--cor0);
+}
+
+.dark-mode aside h3 {
+    background-color: var(--cor17);
+    color: var(--cor13);
+}
+
+.dark-mode footer p a {
+    color:var(--cor13) ;
+}
+
+.dark-mode footer a:hover {
+    background-color: var(--cor14);
+    color: var(--cor17);
 }
